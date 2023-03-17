@@ -8,7 +8,8 @@ Quadratmeter des Wohnraums mit einer Pauschale multipliziert werden und das Vers
 schnittswerten abgeschätzt wird wie viel die einzelnen Einrichtungsgegenstände wert sind.
 Wenn dieser Gesamtwert nun berechnet ist kannn nun mit ein wenig Puffer, damit eine Unterversicherung vermieden werden kann, die Versicherungssumme ausgerechnet werden.
 
-## User Stories
+## User Story
 
-### Zielgruppen
-
+Der Benutzer ruft die Seite auf. Als erstes gibt er an wie viele Quadratmeter die Wohnfläche seines Wohnraums umfasst.
+Als nächstes gibt er sein Besitz an. Sein Mobilliar, Elektronik, Kunstgegenstände etc. Wenn er fertig ist mit der Erfassung
+wird er auf eine Seite weitergeleitet auf welcher er die Auswertung der Beantworteten Fragen begutachten kann.
