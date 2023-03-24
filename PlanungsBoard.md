@@ -23,8 +23,6 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 ## Liste der noch anstehenden Ideen
 
-* [ ] Formular des Schadensrechner
-* [ ] Grafik des Schadensrechners, Ansicht die die Situation zeigt 
 * [ ] Navigationsbar
 * [ ] Routing
 * [ ] Login
@@ -45,9 +43,9 @@ Ich informiere regelmässig über meine Tätigkeiten.
 #### offen
 
 * [ ] 
-  <Idee>
+  Formular des Schadensrechner
 * [ ] 
-  <Idee>
+   Grafik des Schadensrechners, Auswertung der gegebenen Daten
 
 #### in Arbeit
 
