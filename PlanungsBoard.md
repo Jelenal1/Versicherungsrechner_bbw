@@ -43,14 +43,11 @@ Ich informiere regelmässig über meine Tätigkeiten.
 #### offen
 
 * [ ] 
-  Formular des Schadensrechner
-* [ ] 
-   Grafik des Schadensrechners, Auswertung der gegebenen Daten
+* [ ] Grafik des Schadensrechners, Auswertung der gegebenen Daten
 
 #### in Arbeit
 
-* [ ] 
-  <Idee>
+* [ ] Formular des Schadensrechner
 * [ ] 
   <Idee>
 
