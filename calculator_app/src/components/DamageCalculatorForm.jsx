@@ -9,7 +9,6 @@ function DamageCalculatorForm() {
           <input
             type="number"
             name="versicherungssumme"
-            id="versicherungssumme"
             placeholder="VERSICHERUNGSSUMME"
             className="rounded-2xl p-2"
           />
@@ -22,8 +21,19 @@ function DamageCalculatorForm() {
           <input
             type="number"
             name="versicherungswert"
-            id="versicherungswert"
             placeholder="VERSICHERUNGSWERT"
+            className="rounded-2xl p-2"
+          />
+        </div>
+
+        <div className="flex flex-col">
+          <label htmlFor="schaden" className="ml-1 mb-1 text-lg">
+            Schaden angeben
+          </label>
+          <input
+            type="number"
+            name="schaden"
+            placeholder="SCHADEN"
             className="rounded-2xl p-2"
           />
         </div>
