@@ -1,9 +1,9 @@
-import DamageCalculatorForm from "./components/DamageCalculatorForm";
+import DamageCalulator from "./components/DamageCalculator";
 
 function App() {
   return (
     <>
-      <DamageCalculatorForm />
+      <DamageCalulator />
     </>
   );
 }

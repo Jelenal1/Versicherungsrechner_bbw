@@ -1,4 +1,4 @@
-function DamageCalculatorForm() {
+function DamageCalculatorForm({ setDamageData, damageData }) {
   return (
     <div className="bg-gradient-to-r from-purple-500 to-blue-400 p-5">
       <div className="flex flex-col gap-5 max-w-7xl mx-auto">
@@ -11,6 +11,19 @@ function DamageCalculatorForm() {
             name="versicherungssumme"
             placeholder="VERSICHERUNGSSUMME"
             className="rounded-2xl p-2"
+            min={0}
+            step={10}
+            onChange={(e) => {
+              setDamageData((damageData) => ({
+                ...damageData,
+                ...{
+                  id: damageData.id,
+                  suminsured: e.target.value,
+                  insurancevalue: damageData.insurancevalue,
+                  damage: damageData.damage,
+                },
+              }));
+            }}
           />
         </div>
 
@@ -23,6 +36,19 @@ function DamageCalculatorForm() {
             name="versicherungswert"
             placeholder="VERSICHERUNGSWERT"
             className="rounded-2xl p-2"
+            min={0}
+            step={10}
+            onChange={(e) => {
+              setDamageData((damageData) => ({
+                ...damageData,
+                ...{
+                  id: damageData.id,
+                  suminsured: damageData.suminsured,
+                  insurancevalue: e.target.value,
+                  damage: damageData.damage,
+                },
+              }));
+            }}
           />
         </div>
 
@@ -35,6 +61,19 @@ function DamageCalculatorForm() {
             name="schaden"
             placeholder="SCHADEN"
             className="rounded-2xl p-2"
+            min={0}
+            step={10}
+            onChange={(e) => {
+              setDamageData((damageData) => ({
+                ...damageData,
+                ...{
+                  id: damageData.id,
+                  suminsured: damageData.suminsured,
+                  insurancevalue: damageData.insurancevalue,
+                  damage: e.target.value,
+                },
+              }));
+            }}
           />
         </div>
       </div>
