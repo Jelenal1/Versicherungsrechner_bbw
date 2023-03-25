@@ -1,5 +1,11 @@
+import DamageCalculatorForm from "./components/DamageCalculatorForm";
+
 function App() {
-  return <div>lol</div>;
+  return (
+    <>
+      <DamageCalculatorForm />
+    </>
+  );
 }
 
 export default App;
