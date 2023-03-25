@@ -18,7 +18,7 @@ function DamageCalculatorForm({ setDamageData, damageData }) {
                 ...damageData,
                 ...{
                   id: damageData.id,
-                  suminsured: e.target.value,
+                  suminsured: parseInt(e.target.value),
                   insurancevalue: damageData.insurancevalue,
                   damage: damageData.damage,
                 },
@@ -44,7 +44,7 @@ function DamageCalculatorForm({ setDamageData, damageData }) {
                 ...{
                   id: damageData.id,
                   suminsured: damageData.suminsured,
-                  insurancevalue: e.target.value,
+                  insurancevalue: parseInt(e.target.value),
                   damage: damageData.damage,
                 },
               }));
@@ -70,7 +70,7 @@ function DamageCalculatorForm({ setDamageData, damageData }) {
                   id: damageData.id,
                   suminsured: damageData.suminsured,
                   insurancevalue: damageData.insurancevalue,
-                  damage: e.target.value,
+                  damage: parseInt(e.target.value),
                 },
               }));
             }}
