@@ -34,6 +34,7 @@ Ich informiere regelmässig über meine Tätigkeiten.
 * [ ] Datenschutzbestimmungen
 * [ ] AGBs
 * [ ] Tabellen mit verschiedenen Durchschnittspreisen
+* [ ] Grafik des Schadensrechners
 
 ---
 
@@ -44,7 +45,7 @@ Ich informiere regelmässig über meine Tätigkeiten.
 #### offen
 
 * [ ]
-* [ ] Grafik des Schadensrechners
+* [ ] 
 
 #### in Arbeit
 
