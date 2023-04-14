@@ -26,13 +26,11 @@ Ich informiere regelmässig über meine Tätigkeiten.
 * [ ] Login
 * [ ] Registrierungsformular
 * [ ] Firebase Authentifizierung
-* [ ] Firestore
 * [ ] Bildungsgame, zu Versicherungen
 * [ ] Landing Page
 * [ ] Impressum
 * [ ] Datenschutzbestimmungen
 * [ ] AGBs
-* [ ] Tabellen mit verschiedenen Durchschnittspreisen
 * [ ] Grafik des Schadensrechners
 
 ---
@@ -43,8 +41,8 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 #### offen
 
-* [ ] 
-* [ ] 
+* [ ] Firestore
+* [ ] Tabellen mit verschiedenen Durchschnittspreisen
 
 #### in Arbeit
 
