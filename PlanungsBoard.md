@@ -43,16 +43,16 @@ Ich informiere regelmässig über meine Tätigkeiten.
 #### offen
 
 * [ ] 
-* [ ] Navigationsbar
+* [ ] 
 
 #### in Arbeit
 
-* [ ] Routing
 * [ ] 
+* [ ] Navigationsbar
 
 #### erledigt
 
-* [ ] 
+* [ ] Routing
 * [ ] 
   
 
