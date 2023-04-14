@@ -23,8 +23,6 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 ## Liste der noch anstehenden Ideen
 
-* [ ] Navigationsbar
-* [ ] Routing
 * [ ] Login
 * [ ] Registrierungsformular
 * [ ] Firebase Authentifizierung
@@ -40,12 +38,12 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 ## Liste der Arbeiten, die ich am erledigen bin
 
-* Zeitraum: 24.03 .. 14.04
+* Zeitraum: 14.04 .. 28.04
 
 #### offen
 
-* [ ]
-* [ ] 
+* [ ] Routing
+* [ ] Navigationsbar
 
 #### in Arbeit
 
