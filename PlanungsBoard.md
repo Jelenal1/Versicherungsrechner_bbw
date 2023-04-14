@@ -49,13 +49,13 @@ Ich informiere regelmässig über meine Tätigkeiten.
 #### in Arbeit
 
 * [ ] 
-* [ ] Navigationsbar
+* [ ] 
 
 #### erledigt
 
 * [ ] Routing
 * [ ] 
-  
+  Navigationsbar
 
 ---
 
