@@ -42,12 +42,12 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 #### offen
 
-* [ ] Routing
+* [ ] 
 * [ ] Navigationsbar
 
 #### in Arbeit
 
-* [ ] 
+* [ ] Routing
 * [ ] 
 
 #### erledigt
