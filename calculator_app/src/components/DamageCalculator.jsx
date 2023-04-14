@@ -11,10 +11,28 @@ function DamageCalulator() {
   });
 
   const calculateDamage = () => {
-    if (damageData.insurancevalue && damageData.suminsured && damageData.damage)
-      return (
-        (damageData.suminsured / damageData.insurancevalue) * damageData.damage
-      );
+    const damageCalculated =
+      (damageData.suminsured / damageData.insurancevalue) * damageData.damage;
+    if (
+      damageData.insurancevalue &&
+      damageData.suminsured &&
+      damageData.damage
+    ) {
+      if (damageCalculated > damageData.damage) {
+        if (damageData.damage <= damageData.suminsured) {
+          return damageData.damage;
+        }
+        if (damageData.damage > damageData.suminsured) {
+          return damageData.suminsured;
+        }
+      } else {
+        if (damageCalculated > damageData.suminsured) {
+          return damageData.suminsured;
+        } else {
+          return damageCalculated;
+        }
+      }
+    }
   };
 
   return (

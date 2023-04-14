@@ -49,20 +49,20 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 #### in Arbeit
 
-* [ ] Auswertung der gegebenen Daten
+* [ ] 
 * [ ] 
 
 #### erledigt
 
-* [ ] Formular des Schadensrechner
 * [ ] 
-  <Idee>
+* [ ] 
+  
 
 ---
 
 ## Liste der zuvor abgeschlossenen Arbeiten
 
 * [ ] 
-  <Idee>
+  Formular des Schadensrechner
 * [ ] 
-  <Idee>
+  Auswertung der gegebenen Daten
