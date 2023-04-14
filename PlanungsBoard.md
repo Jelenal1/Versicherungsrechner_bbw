@@ -28,6 +28,7 @@ Ich informiere regelmässig über meine Tätigkeiten.
 * [ ] Firebase Authentifizierung
 * [ ] Firestore
 * [ ] Bildungsgame, zu Versicherungen
+* [ ] Landing Page
 * [ ] Impressum
 * [ ] Datenschutzbestimmungen
 * [ ] AGBs
