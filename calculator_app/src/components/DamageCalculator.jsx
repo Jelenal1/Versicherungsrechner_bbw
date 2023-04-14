@@ -1,6 +1,7 @@
 import { useState } from "react";
 import DamageCalculatorChart from "./DamageCalculatorChart";
 import DamageCalculatorForm from "./DamageCalculatorForm";
+import Navbar from "./Navbar";
 
 function DamageCalulator() {
   const [damageData, setDamageData] = useState({
@@ -37,6 +38,7 @@ function DamageCalulator() {
 
   return (
     <>
+      <Navbar />
       <DamageCalculatorForm
         setDamageData={setDamageData}
         damageData={damageData}
