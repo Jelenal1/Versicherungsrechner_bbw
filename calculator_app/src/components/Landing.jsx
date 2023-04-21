@@ -4,9 +4,9 @@ function Landing() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col">
+      <div className="flex flex-col p-2">
         <h1 className="text-3xl mx-auto">Landing Page</h1>
-        <div className="p-5 flex gap-3 justify-center">
+        <div className="p-4 flex gap-3 justify-center">
           <div className="p-4 text-xl rounded-xl bg-violet-400 w-1/2 flex flex-col">
             <h2 className="text-2xl text-center font-bold mb-2">
               Schadensrechner
