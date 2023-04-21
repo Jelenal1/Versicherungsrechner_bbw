@@ -1,3 +1,5 @@
+# Projektdokumentation Versicherungsrechner
+
 ## Idee
 
 Es soll möglich sein seinen gesamten Hausrat zu erfassen um sich dann die optimale Versicherungssumme ausgeben zu lassen.
