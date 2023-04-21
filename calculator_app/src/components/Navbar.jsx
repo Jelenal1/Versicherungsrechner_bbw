@@ -7,7 +7,7 @@ function Navbar() {
     icons: `w-8 h-8`,
   };
   return (
-    <div className="p-2 flex gap-2 h-20 bg-gradient-to-r from-purple-600 to-blue-400 border-b-2 border-black">
+    <div className="p-2 flex gap-2 h-20 bg-violet-300 border-b-2 border-black">
       <div className="flex items-center">
         <BsFillCalculatorFill className={styles.icons} />
         <h1 className="text-lg">Lorem</h1>
