@@ -25,9 +25,7 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 * [ ] Login
 * [ ] Registrierungsformular
-* [ ] Firebase Authentifizierung
 * [ ] Bildungsgame, zu Versicherungen
-* [ ] Landing Page
 * [ ] Impressum
 * [ ] Datenschutzbestimmungen
 * [ ] AGBs
@@ -41,12 +39,13 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 #### offen
 
-* [ ] Firestore
+* [ ] Firestore (Aufsetzen)
+* [ ] Firebase Authentifizierung (Aufsetzen)
 * [ ] Tabellen mit verschiedenen Durchschnittspreisen
 
 #### in Arbeit
 
-* [ ] 
+* [ ] Landing Page
 * [ ] 
 
 #### erledigt
