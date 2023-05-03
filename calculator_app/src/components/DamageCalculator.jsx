@@ -33,6 +33,25 @@ function DamageCalulator() {
           return damageCalculated;
         }
       }
+    } else {
+      return "__";
+    }
+  };
+
+  const calculatePercent = () => {
+    if (damageData.insurancevalue && damageData.suminsured) {
+      return (damageData.suminsured / damageData.insurancevalue) * 100;
+    } else {
+      return "__";
+    }
+  };
+
+  const underOrOverInsured = () => {
+    if (calculatePercent() > 100) {
+      return "Sie sind über versichert";
+    }
+    if (calculatePercent() < 100) {
+      return "Sie sind überversichert";
     }
   };
 
@@ -43,7 +62,11 @@ function DamageCalulator() {
         setDamageData={setDamageData}
         damageData={damageData}
       />
-      <DamageCalculatorChart calculateDamage={calculateDamage} />
+      <DamageCalculatorChart
+        calculateDamage={calculateDamage}
+        calculatePercent={calculatePercent}
+        underOrOverInsured={underOrOverInsured}
+      />
     </>
   );
 }
