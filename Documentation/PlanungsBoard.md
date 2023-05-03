@@ -39,14 +39,14 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 #### offen
 
-* [ ] Firestore (Aufsetzen)
-* [ ] Firebase Authentifizierung (Aufsetzen)
+* [ ] 
+* [ ] 
 * [ ] Tabellen mit verschiedenen Durchschnittspreisen
 
 #### in Arbeit
 
-* [ ] 
-* [ ] 
+* [ ] Firestore (Aufsetzen)
+* [ ] Firebase Authentifizierung (Aufsetzen)
 
 #### erledigt
 
