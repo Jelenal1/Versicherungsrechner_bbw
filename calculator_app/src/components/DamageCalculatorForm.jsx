@@ -1,4 +1,4 @@
-function DamageCalculatorForm({ setDamageData, damageData }) {
+function DamageCalculatorForm({ setDamageData }) {
   return (
     <div className="p-2">
       <h1 className="text-3xl text-center mb-3">Schadensrechner</h1>
