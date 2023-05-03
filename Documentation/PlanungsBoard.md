@@ -45,11 +45,12 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 #### in Arbeit
 
-* [ ] Landing Page
+* [ ] 
 * [ ] 
 
 #### erledigt
 
+* [ ] Landing Page
 * [ ] Routing
 * [ ] 
   Navigationsbar
