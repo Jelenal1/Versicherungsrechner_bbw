@@ -1,6 +1,6 @@
 import { BsFillCalculatorFill, BsHouseDoorFill } from "react-icons/bs";
 import { FaHouseDamage } from "react-icons/fa";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const styles = {

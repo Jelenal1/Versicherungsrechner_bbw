@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 
 function Landing() {
+  const navigate = useNavigate();
+
   return (
     <>
       <Navbar />
@@ -15,7 +18,9 @@ function Landing() {
             welche die Versicherung zahlen wird. Wenn sie ihren Hauswert, bzw
             Versicherungswert nicht wissen gibt es auch die möglichkeit diesen
             Schritt für Schritt zu berechnen.
-            <button className="border-2 w-16 p-1 mx-auto mt-1 rounded-xl">
+            <button className="border-2 w-16 p-1 mx-auto mt-1 rounded-xl"
+            onClick={()=> navigate("/damagecalculator")}
+            >
               Go!
             </button>
           </div>
