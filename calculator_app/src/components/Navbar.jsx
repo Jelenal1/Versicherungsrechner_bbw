@@ -13,16 +13,17 @@ function Navbar() {
   return (
     <div className="p-2 flex gap-2 h-20 bg-violet-300 border-b-2 border-black">
       <div
-        className="flex items-center"
+        className="flex items-center cursor-pointer"
         onClick={() => {
           navigate("/");
         }}
       >
-        <BsFillCalculatorFill className={styles.icons} />
-        <h1 className="text-lg">Lorem</h1>
+        <h1 className="text-lg border-t-2 border-b-2 border-black">
+          Lorem Company
+        </h1>
       </div>
       <button
-        className="ml-1"
+        className="ml-4"
         onClick={() => {
           navigate("/");
         }}
@@ -30,7 +31,7 @@ function Navbar() {
         <BsHouseDoorFill className={styles.icons} />
       </button>
       <button
-        className="ml-7"
+        className="ml-4"
         onClick={() => {
           navigate("/damagecalculator");
         }}
