@@ -40,15 +40,15 @@ Ich informiere regelmässig über meine Tätigkeiten.
 #### offen
 
 * [ ] 
-* [ ] 
-* [ ] Tabellen mit verschiedenen Durchschnittspreisen
 
 #### in Arbeit
 
-* [ ] Firestore (Aufsetzen)
-* [ ] Firebase Authentifizierung (Aufsetzen)
+* [ ] Tabellen mit verschiedenen Durchschnittspreisen (Versicherungsummerechner)
 
 #### erledigt
+
+* [ ] Firestore (Aufsetzen)
+* [ ] Firebase Authentifizierung (Aufsetzen)
 
 * [ ] Landing Page
 * [ ] Routing
