@@ -1,6 +1,7 @@
+import { useState } from "react";
 import { FaRegCheckCircle } from "react-icons/fa";
 
-function InsuranceCalculatorInputForm() {
+function InsuranceCalculatorInputForm({ setHouseItems }) {
   const styles = {
     heading: `text-3xl text-center mb-3`,
     formcontainer: `flex gap-5 max-w-7xl mx-auto bg-violet-400 rounded-2xl p-2`,
@@ -8,6 +9,8 @@ function InsuranceCalculatorInputForm() {
     label: `ml-1 mb-1 text-lg`,
     inputfield: `rounded-2xl p-2 border-none focus:outline-none w-1/2`,
   };
+  const [name, setName] = useState();
+  const [value, setValue] = useState();
   return (
     <div className="p-2">
       <h1 className={styles.heading}>Versicherungssummenrechner</h1>
@@ -16,12 +19,34 @@ function InsuranceCalculatorInputForm() {
           <label htmlFor="gegenstand" className={styles.label}>
             Gegenstandsname
           </label>
-          <input type="text" name="gegenstand" className={styles.inputfield} />
+          <input
+            type="text"
+            name="gegenstand"
+            className={styles.inputfield}
+            onChange={(e) => setName(e.target.value)}
+          />
           <label htmlFor="wert" className={styles.label}>
             Wert
           </label>
-          <input type="number" name="wert" className={styles.inputfield} />
-          <button className="ml-2">
+          <input
+            type="number"
+            name="wert"
+            className={styles.inputfield}
+            onChange={(e) => setValue(e.target.value)}
+          />
+          <button
+            className="ml-2"
+            onClick={() => {
+              setHouseItems((items) => [
+                ...items,
+                {
+                  id: items.length + 1,
+                  name: name,
+                  value: value,
+                },
+              ]);
+            }}
+          >
             <FaRegCheckCircle className="w-10 h-10" />
           </button>
         </div>

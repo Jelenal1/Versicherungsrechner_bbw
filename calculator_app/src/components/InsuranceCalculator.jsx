@@ -3,11 +3,11 @@ import InsuranceCalculatorInputForm from "./InsuranceCalculatorInputForm";
 import Navbar from "./Navbar";
 
 function InsuranceCalculator() {
-  const [houseItems, setHouseItems] = useState();
+  const [houseItems, setHouseItems] = useState([]);
   return (
     <>
       <Navbar />
-      <InsuranceCalculatorInputForm />
+      <InsuranceCalculatorInputForm setHouseItems={setHouseItems} />
     </>
   );
 }
