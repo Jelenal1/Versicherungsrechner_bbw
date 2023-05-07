@@ -43,7 +43,7 @@ function InsuranceCalculatorItems({ houseItems }) {
             </div>
             <div>
               <h2 className="text-lg">Versicherungswert:</h2>
-              <h2>{getValue() + 20}</h2>
+              <h2>{getValue() ? getValue() + 20 : getValue()}</h2>
             </div>
           </div>
         </div>
