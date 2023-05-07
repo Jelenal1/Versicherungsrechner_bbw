@@ -23,6 +23,18 @@ function InsuranceCalculatorInputForm({ setHouseItems }) {
             type="text"
             name="gegenstand"
             className={styles.inputfield}
+            onKeyDown={(e) =>
+              e.key == "Enter"
+                ? setHouseItems((items) => [
+                    ...items,
+                    {
+                      id: items.length + 1,
+                      name: name,
+                      value: value,
+                    },
+                  ])
+                : null
+            }
             onChange={(e) => setName(e.target.value)}
           />
           <label htmlFor="wert" className={styles.label}>
