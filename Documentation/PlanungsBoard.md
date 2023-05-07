@@ -23,8 +23,6 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 ## Liste der noch anstehenden Ideen
 
-* [ ] Login
-* [ ] Registrierungsformular
 * [ ] Bildungsgame, zu Versicherungen
 * [ ] Impressum
 * [ ] Datenschutzbestimmungen
@@ -39,11 +37,12 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 #### offen
 
-* [ ] 
+* [ ] Registrierungsformular
 
 #### in Arbeit
 
-* [ ] Tabellen mit verschiedenen Durchschnittspreisen (Versicherungsummerechner)
+* [ ] Login
+* [ ] Firestore
 
 #### erledigt
 
@@ -52,8 +51,8 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 * [ ] Landing Page
 * [ ] Routing
-* [ ] 
-  Navigationsbar
+* [ ] Navigationsbar
+* [ ] Tabellen mit verschiedenen Durchschnittspreisen (Versicherungsummerechner)
 
 ---
 
