@@ -4,13 +4,7 @@ import Navbar from "./Navbar";
 import InsuranceCalculatorItems from "./InsuranceCalculatorItems";
 
 function InsuranceCalculator() {
-  const [houseItems, setHouseItems] = useState([
-    {
-      id: 1,
-      name: "test",
-      value: 20,
-    },
-  ]);
+  const [houseItems, setHouseItems] = useState([]);
   return (
     <>
       <Navbar />
