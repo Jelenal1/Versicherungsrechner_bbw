@@ -50,7 +50,7 @@ function Navbar() {
         <h2 className={styles.pillstext}>Versicherungssumme</h2>
       </button>
       <button
-        className={styles.pills}
+        className="flex items-center bg-violet-200 p-2 rounded-xl ml-auto"
         onClick={() => {
           navigate("/signup");
         }}
