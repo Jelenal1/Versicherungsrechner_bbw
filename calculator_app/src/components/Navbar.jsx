@@ -1,5 +1,5 @@
 import { BsFillCalculatorFill, BsHouseDoorFill } from "react-icons/bs";
-import { FaCalculator, FaHouseDamage } from "react-icons/fa";
+import { FaCalculator, FaHouseDamage, FaUserPlus } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 function Navbar() {
@@ -48,6 +48,15 @@ function Navbar() {
       >
         <FaCalculator className={styles.icons} />
         <h2 className={styles.pillstext}>Versicherungssumme</h2>
+      </button>
+      <button
+        className={styles.pills}
+        onClick={() => {
+          navigate("/signup");
+        }}
+      >
+        <FaUserPlus className={styles.icons} />
+        <h2 className={styles.pillstext}>Sign Up</h2>
       </button>
     </div>
   );
