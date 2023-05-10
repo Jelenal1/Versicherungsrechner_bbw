@@ -1,7 +1,7 @@
 import { auth } from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import Navbar from "./Navbar";
-function Registration() {
+function Login() {
   const styles = {
     heading: `text-3xl text-center mb-3`,
     formcontainer: `flex gap-5 max-w-7xl mx-auto bg-violet-400 rounded-2xl p-2`,
@@ -45,4 +45,4 @@ function Registration() {
     </>
   );
 }
-export default Registration;
+export default Login;
