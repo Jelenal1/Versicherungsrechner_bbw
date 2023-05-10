@@ -1,7 +1,8 @@
 import { auth } from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import Navbar from "./Navbar";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 function Login() {
   const styles = {
     heading: `text-3xl text-center mb-3`,
@@ -17,6 +18,12 @@ function Login() {
       password
     );
   };
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (auth.currentUser) navigate("/");
+  }, [auth]);
 
   return (
     <>
