@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { auth } from "../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import Navbar from "./Navbar";
 function Registration() {
   const styles = {
@@ -8,8 +10,8 @@ function Registration() {
     label: `ml-1 mb-1 text-lg`,
     inputfield: `rounded-2xl p-2 border-none focus:outline-none w-full`,
   };
-  const createUser = async () => {
-    const userCredential = await createUserWithEmailAndPasswort(
+  const createUser = async (email, password) => {
+    const userCredential = await createUserWithEmailAndPassword(
       auth,
       email,
       password
@@ -23,13 +25,23 @@ function Registration() {
       <div className="p-2">
         <h1 className={styles.heading}>Sign Up</h1>
         <div className={styles.formcontainer}>
-          <div className={styles.inputcontainer}>
+          <form
+            className={styles.inputcontainer}
+            onSubmit={(e) => {
+              e.preventDefault();
+              createUser(e.target[0].value, e.target[1].value);
+            }}
+          >
             <label htmlFor="email">Email</label>
             <input type="email" className={styles.inputfield} />
             <label htmlFor="password">Passwort</label>
             <input type="password" className={styles.inputfield} />
-            <button className="border-2 p-2 mt-2 rounded-xl">Submit</button>
-          </div>
+            <input
+              type="submit"
+              value="submit"
+              className="border-2 rounded-xl p-2 mt-1"
+            />
+          </form>
         </div>
       </div>
     </>
