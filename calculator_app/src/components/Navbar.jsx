@@ -52,11 +52,11 @@ function Navbar() {
       <button
         className="flex items-center bg-violet-200 p-2 rounded-xl ml-auto"
         onClick={() => {
-          navigate("/signup");
+          navigate("/signin");
         }}
       >
         <FaUserPlus className={styles.icons} />
-        <h2 className={styles.pillstext}>Sign Up</h2>
+        <h2 className={styles.pillstext}>Sign In</h2>
       </button>
     </div>
   );

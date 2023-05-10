@@ -11,7 +11,7 @@ function App() {
         <Route index path="/" element={<Landing />} />
         <Route path="/damagecalculator" element={<DamageCalulator />} />
         <Route path="/insurancecalculator" element={<InsuranceCalculator />} />
-        <Route path="/signup" element={<Registration />} />
+        <Route path="/signin" element={<Login />} />
       </Routes>
     </Router>
   );
