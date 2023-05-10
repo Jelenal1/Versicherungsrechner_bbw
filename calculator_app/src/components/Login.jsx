@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Login() {
   const styles = {
     heading: `text-3xl text-center mb-3`,
-    formcontainer: `flex gap-5 max-w-7xl mx-auto bg-violet-400 rounded-2xl p-2`,
+    formcontainer: `flex gap-5 max-w-5xl mx-auto bg-violet-400 rounded-2xl p-2`,
     inputcontainer: `flex flex-col gap-1 items-center p-2 rounded-2xl w-full`,
     label: `ml-1 mb-1 text-lg`,
     inputfield: `rounded-2xl p-2 border-none focus:outline-none w-full`,
@@ -44,7 +44,7 @@ function Login() {
         </div>
         <div className="flex flex-col mx-auto w-fit bg-violet-400 mt-2 p-3 rounded-3xl">
           <span className="text-lg">No Account yet?</span>
-          <button className="border-2 w-fit mx-auto p-2 rounded-xl">
+          <button className="border-2 w-fit mx-auto p-2 rounded-xl mt-1">
             Sign Up
           </button>
         </div>
