@@ -2,7 +2,7 @@ function DamageCalculatorForm({ setDamageData }) {
   return (
     <div className="p-2">
       <h1 className="text-3xl text-center mb-3">Schadensrechner</h1>
-      <div className="flex flex-col gap-5 max-w-7xl mx-auto bg-violet-400 rounded-2xl p-3">
+      <div className="flex flex-col gap-5 max-w-4xl mx-auto bg-violet-400 rounded-2xl p-3">
         <div className="flex flex-col">
           <label htmlFor="versicherungssumme" className="ml-1 mb-1 text-lg">
             Versicherungssumme angeben

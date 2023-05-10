@@ -1,7 +1,7 @@
 function InsuranceCalculatorItems({ houseItems }) {
   const styles = {
     heading: `text-3xl text-center mb-3`,
-    formcontainer: `flex max-w-7xl mx-auto mb-5 bg-violet-400 rounded-2xl`,
+    formcontainer: `flex max-w-4xl mx-auto mb-5 bg-violet-400 rounded-2xl`,
     table: `min-w-fit w-full`,
     label: `ml-1 mb-1 text-lg`,
     inputfield: `rounded-2xl p-2 border-none focus:outline-none w-1/2`,

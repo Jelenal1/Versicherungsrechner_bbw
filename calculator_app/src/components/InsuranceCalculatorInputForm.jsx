@@ -4,7 +4,7 @@ import { FaRegCheckCircle } from "react-icons/fa";
 function InsuranceCalculatorInputForm({ setHouseItems }) {
   const styles = {
     heading: `text-3xl text-center mb-3`,
-    formcontainer: `flex gap-5 max-w-7xl mx-auto bg-violet-400 rounded-2xl p-2`,
+    formcontainer: `flex gap-5 max-w-4xl mx-auto bg-violet-400 rounded-2xl p-2`,
     inputcontainer: `flex gap-1 items-center p-2 rounded-2xl w-full`,
     label: `ml-1 mb-1 text-lg`,
     inputfield: `rounded-2xl p-2 border-none focus:outline-none w-1/2`,
