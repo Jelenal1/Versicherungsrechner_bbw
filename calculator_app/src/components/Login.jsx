@@ -1,6 +1,7 @@
 import { auth } from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 function Login() {
   const styles = {
     heading: `text-3xl text-center mb-3`,
@@ -40,6 +41,12 @@ function Login() {
               className="border-2 rounded-xl p-2 mt-1"
             />
           </form>
+        </div>
+        <div className="flex flex-col mx-auto w-fit bg-violet-400 mt-2 p-3 rounded-3xl">
+          <span className="text-lg">No Account yet?</span>
+          <button className="border-2 w-fit mx-auto p-2 rounded-xl">
+            Sign Up
+          </button>
         </div>
       </div>
     </>
