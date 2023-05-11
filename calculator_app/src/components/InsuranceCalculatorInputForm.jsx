@@ -4,7 +4,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { auth, db } from "../firebase";
 import { BsHouseCheck } from "react-icons/bs";
 
-function InsuranceCalculatorInputForm({ setHouseItems }) {
+function InsuranceCalculatorInputForm({ setHouseItems, getData }) {
   const styles = {
     heading: `text-3xl text-center mb-3`,
     formcontainer: `flex gap-5 max-w-4xl mx-auto bg-violet-400 rounded-2xl p-2`,
@@ -25,13 +25,15 @@ function InsuranceCalculatorInputForm({ setHouseItems }) {
       } catch (error) {
         console.log(error);
       }
+
+      getData();
     } else {
       setHouseItems((items) => [
         ...items,
         {
           id: items.length + 1,
-          name: name,
-          value: value,
+          itemname: name,
+          itemvalue: value,
         },
       ]);
     }

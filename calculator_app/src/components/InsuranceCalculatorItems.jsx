@@ -11,8 +11,8 @@ function InsuranceCalculatorItems({ houseItems }) {
     houseItems.map((item) => {
       return (
         <tr key={item.id} className={styles.column}>
-          <td>{item.name}</td>
-          <td>{item.value}</td>
+          <td>{item.itemname}</td>
+          <td>{item.itemvalue}</td>
         </tr>
       );
     });
