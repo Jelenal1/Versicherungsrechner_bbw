@@ -41,7 +41,7 @@ function InsuranceCalculatorItems({ houseItems }) {
       sum = sum + parseInt(item.itemvalue);
     });
     return sum;
-    setValueChanged();
+    setValueChanged(sum);
   };
 
   useEffect(() => {
