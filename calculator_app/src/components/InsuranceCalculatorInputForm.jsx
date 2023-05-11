@@ -16,22 +16,25 @@ function InsuranceCalculatorInputForm({ setHouseItems }) {
   const [value, setValue] = useState();
 
   const additem = async () => {
-    try {
-      await addDoc(collection(db, auth.currentUser.uid), {
-        itemname: name,
-        itemvalue: value,
-      });
-    } catch (error) {
-      console.log(error);
+    if (auth.currentUser) {
+      try {
+        await addDoc(collection(db, auth.currentUser.uid), {
+          itemname: name,
+          itemvalue: value,
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      setHouseItems((items) => [
+        ...items,
+        {
+          id: items.length + 1,
+          name: name,
+          value: value,
+        },
+      ]);
     }
-    setHouseItems((items) => [
-      ...items,
-      {
-        id: items.length + 1,
-        name: name,
-        value: value,
-      },
-    ]);
   };
   return (
     <div className="p-2">
