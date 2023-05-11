@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { FaRegCheckCircle } from "react-icons/fa";
+import { collection, addDoc } from "firebase/firestore";
+import { auth, db } from "../firebase";
+import { BsHouseCheck } from "react-icons/bs";
 
 function InsuranceCalculatorInputForm({ setHouseItems }) {
   const styles = {
@@ -11,6 +14,25 @@ function InsuranceCalculatorInputForm({ setHouseItems }) {
   };
   const [name, setName] = useState();
   const [value, setValue] = useState();
+
+  const additem = async () => {
+    try {
+      await addDoc(collection(db, auth.currentUser.uid), {
+        itemname: name,
+        itemvalue: value,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+    setHouseItems((items) => [
+      ...items,
+      {
+        id: items.length + 1,
+        name: name,
+        value: value,
+      },
+    ]);
+  };
   return (
     <div className="p-2">
       <h1 className={styles.heading}>Versicherungssummenrechner</h1>
@@ -23,18 +45,7 @@ function InsuranceCalculatorInputForm({ setHouseItems }) {
             type="text"
             name="gegenstand"
             className={styles.inputfield}
-            onKeyDown={(e) =>
-              e.key == "Enter"
-                ? setHouseItems((items) => [
-                    ...items,
-                    {
-                      id: items.length + 1,
-                      name: name,
-                      value: value,
-                    },
-                  ])
-                : null
-            }
+            onKeyDown={(e) => (e.key == "Enter" ? additem() : null)}
             onChange={(e) => setName(e.target.value)}
           />
           <label htmlFor="wert" className={styles.label}>
@@ -44,33 +55,10 @@ function InsuranceCalculatorInputForm({ setHouseItems }) {
             type="number"
             name="wert"
             className={styles.inputfield}
-            onKeyDown={(e) =>
-              e.key == "Enter"
-                ? setHouseItems((items) => [
-                    ...items,
-                    {
-                      id: items.length + 1,
-                      name: name,
-                      value: value,
-                    },
-                  ])
-                : null
-            }
+            onKeyDown={(e) => (e.key == "Enter" ? additem() : null)}
             onChange={(e) => setValue(e.target.value)}
           />
-          <button
-            className="ml-2"
-            onClick={() => {
-              setHouseItems((items) => [
-                ...items,
-                {
-                  id: items.length + 1,
-                  name: name,
-                  value: value,
-                },
-              ]);
-            }}
-          >
+          <button className="ml-2" onClick={(e) => additem()}>
             <FaRegCheckCircle className="w-10 h-10" />
           </button>
         </div>
