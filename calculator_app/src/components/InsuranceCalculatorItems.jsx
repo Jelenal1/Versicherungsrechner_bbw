@@ -19,7 +19,7 @@ function InsuranceCalculatorItems({ houseItems }) {
   const getValue = () => {
     let sum = 0;
     houseItems.forEach((item) => {
-      sum = sum + parseInt(item.value);
+      sum = sum + parseInt(item.itemvalue);
     });
     return sum;
   };
