@@ -1,8 +1,7 @@
 import { auth } from "../firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import Navbar from "./Navbar";
-import { Link, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 function Login() {
   const styles = {
     heading: `text-3xl text-center mb-3`,
@@ -21,9 +20,9 @@ function Login() {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
+  onAuthStateChanged(auth, (user) => {
     if (auth.currentUser) navigate("/");
-  }, [auth]);
+  });
 
   return (
     <>
@@ -51,7 +50,12 @@ function Login() {
         </div>
         <div className="flex flex-col mx-auto w-fit bg-violet-400 mt-2 p-3 rounded-3xl">
           <span className="text-lg">No Account yet?</span>
-          <button className="border-2 w-fit mx-auto p-2 rounded-xl mt-1">
+          <button
+            className="border-2 w-fit mx-auto p-2 rounded-xl mt-1"
+            onClick={() => {
+              navigate("/signup");
+            }}
+          >
             Sign Up
           </button>
         </div>

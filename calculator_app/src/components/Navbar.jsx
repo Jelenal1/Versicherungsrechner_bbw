@@ -1,6 +1,13 @@
-import { BsFillCalculatorFill, BsHouseDoorFill } from "react-icons/bs";
-import { FaCalculator, FaHouseDamage, FaUserPlus } from "react-icons/fa";
+import { signOut } from "firebase/auth";
+import { BsHouseDoorFill } from "react-icons/bs";
+import {
+  FaCalculator,
+  FaHouseDamage,
+  FaSignOutAlt,
+  FaUser,
+} from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { auth } from "../firebase";
 
 function Navbar() {
   const styles = {
@@ -11,7 +18,7 @@ function Navbar() {
   };
 
   const navigate = useNavigate();
-
+  const logOut = async () => await signOut(auth);
   return (
     <div className="p-2 flex items-center gap-2 h-20 bg-violet-300 border-b-2 border-black">
       <div
@@ -49,15 +56,28 @@ function Navbar() {
         <FaCalculator className={styles.icons} />
         <h2 className={styles.pillstext}>Versicherungssumme</h2>
       </button>
-      <button
-        className="flex items-center bg-violet-200 p-2 rounded-xl ml-auto"
-        onClick={() => {
-          navigate("/signin");
-        }}
-      >
-        <FaUserPlus className={styles.icons} />
-        <h2 className={styles.pillstext}>Sign In</h2>
-      </button>
+      {auth.currentUser ? (
+        <button
+          className="flex items-center bg-violet-200 p-2 rounded-xl ml-auto"
+          onClick={() => {
+            logOut();
+            navigate("/");
+          }}
+        >
+          <FaSignOutAlt className={styles.icons} />
+          <h2 className={styles.pillstext}>Sign Out</h2>
+        </button>
+      ) : (
+        <button
+          className="flex items-center bg-violet-200 p-2 rounded-xl ml-auto"
+          onClick={() => {
+            navigate("/signin");
+          }}
+        >
+          <FaUser className={styles.icons} />
+          <h2 className={styles.pillstext}>Sign In</h2>
+        </button>
+      )}
     </div>
   );
 }
