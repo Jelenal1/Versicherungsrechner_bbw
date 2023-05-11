@@ -2,7 +2,6 @@ import { useState } from "react";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { collection, addDoc } from "firebase/firestore";
 import { auth, db } from "../firebase";
-import { BsHouseCheck } from "react-icons/bs";
 
 function InsuranceCalculatorInputForm({ setHouseItems, getData }) {
   const styles = {

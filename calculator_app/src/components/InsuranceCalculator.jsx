@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import InsuranceCalculatorInputForm from "./InsuranceCalculatorInputForm";
 import Navbar from "./Navbar";
 import InsuranceCalculatorItems from "./InsuranceCalculatorItems";
