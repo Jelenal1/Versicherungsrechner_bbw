@@ -1,5 +1,8 @@
 import { auth } from "../firebase";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+} from "firebase/auth";
 import Navbar from "./Navbar";
 function Registration() {
   const styles = {
@@ -17,6 +20,10 @@ function Registration() {
     );
     console.log(userCredential.user);
   };
+
+  onAuthStateChanged(auth, (user) => {
+    if (auth.currentUser) navigate("/");
+  });
 
   return (
     <>
