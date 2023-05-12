@@ -37,3 +37,9 @@ Der User ruft die Seite auf. Er kommt zunächst auf eine Landingpage auf welcher
 ## Systemdiagramm
 
 ![System Diagramm](./Systemdiagramm_Versicherungsrechner.drawio.png)
+
+## Reflexion
+
+Ich habe mir ein wenig zu viel vorgenommen. Das Login und die Funktion die damit verbunden ist, die Daten von dem Versicherungssummenrechner zu speichern sind ein wenig unnötig. Jedoch wollte ich unbedingt etwas mit Firebase machen. Beim Styling hätte ich mir einen detaillierteren Plan machen sollen, jedoch stand für mich die Funktionalität bei diesem Projekt im Vordergrund.
+
+Was mir jedoch recht gut gelungen ist, trotzdem ich mir ein wenig zu viel vorgenommen habe, meine Ideen so umzusetzen wie ich sie geplant hatte. Ausserdem hatte ich keinen Moment, in dem ich nicht wirklich weiter wusste. Ich habe mein Wissen anwenden können und einiges davon noch weiter vertieft. 
