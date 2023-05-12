@@ -37,28 +37,26 @@ Ich informiere regelmässig über meine Tätigkeiten.
 
 #### offen
 
-* [ ] Registrierungsformular
-
 #### in Arbeit
 
-* [ ] Login
-* [ ] Firestore
+* [ ] 
+* [ ]
 
 #### erledigt
 
 * [ ] Firestore (Aufsetzen)
 * [ ] Firebase Authentifizierung (Aufsetzen)
-
 * [ ] Landing Page
 * [ ] Routing
 * [ ] Navigationsbar
 * [ ] Tabellen mit verschiedenen Durchschnittspreisen (Versicherungsummerechner)
+* [ ] Login
+* [ ] Firestore
+* [ ] Registrierungsformular
 
 ---
 
 ## Liste der zuvor abgeschlossenen Arbeiten
 
-* [ ] 
-  Formular des Schadensrechner
-* [ ] 
-  Auswertung der gegebenen Daten
+* [ ] Formular des Schadensrechner
+* [ ] Auswertung der gegebenen Daten
