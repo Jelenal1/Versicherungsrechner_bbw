@@ -1,8 +1,7 @@
-import { doc, setDoc } from "firebase/firestore";
-import { useCallback, useEffect, useState } from "react";
-import { auth } from "../firebase";
+import { deleteDoc, doc, setDoc } from "firebase/firestore";
+import { auth, db } from "../firebase";
 
-function InsuranceCalculatorItems({ houseItems }) {
+function InsuranceCalculatorItems({ houseItems, setHouseItems }) {
   const styles = {
     heading: `text-3xl text-center mb-3`,
     formcontainer: `flex max-w-4xl mx-auto mb-5 bg-violet-400 rounded-2xl`,
@@ -24,29 +23,42 @@ function InsuranceCalculatorItems({ houseItems }) {
     }
   };
 
+  const deleteData = async (id) => {
+    await deleteDoc(doc(db, auth.currentUser.uid, id));
+  };
+
   const renderColumn = () =>
     houseItems.map((item) => {
       return (
         <tr key={item.id} className={styles.column}>
           <td>{item.itemname}</td>
           <td>{item.itemvalue}</td>
+          {auth.currentUser ? (
+            <button onClick={() => deleteData(item.id)}>🗑️</button>
+          ) : (
+            <button
+              onClick={() => {
+                const itemsNotToDelete = houseItems.filter(
+                  (itemNotToDelete) => itemNotToDelete.id != item.id
+                );
+                setHouseItems(itemsNotToDelete);
+              }}
+            >
+              🗑️
+            </button>
+          )}
         </tr>
       );
     });
 
-  const [valueChanged, setValueChanged] = useState();
   const getValue = () => {
     let sum = 0;
     houseItems.forEach((item) => {
       sum = sum + parseInt(item.itemvalue);
     });
     return sum;
-    setValueChanged(sum);
   };
 
-  useEffect(() => {
-    setResults();
-  }, [valueChanged]);
   return (
     <>
       <div className="p-2">

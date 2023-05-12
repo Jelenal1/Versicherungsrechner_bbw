@@ -31,7 +31,10 @@ function InsuranceCalculator() {
         setHouseItems={setHouseItems}
         getData={getData}
       />
-      <InsuranceCalculatorItems houseItems={houseItems} />
+      <InsuranceCalculatorItems
+        houseItems={houseItems}
+        setHouseItems={setHouseItems}
+      />
     </>
   );
 }
