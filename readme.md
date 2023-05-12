@@ -25,4 +25,4 @@ Während des Projektes habe ich ein [Planungsboard](./Documentation/Planungsboar
 
 Ich habe für das Deployment Netlify benutzt, da es die einfachste Variante ist React Apps zu veröffentlichen.
 
-Über diesen [Link] kommt man zu dem eigentlichen Versicherungsrechner.
+Über diesen [Link](https://versicherungsrechner.netlify.app/) kommt man zu dem eigentlichen Versicherungsrechner.
