@@ -54,8 +54,8 @@ function Landing() {
               Sie kennen Ihre Versicherungssumme nicht? Kein Problem! <br /> Mit
               unserem Versicherungssummenrechner können sie ihre
               Versicherungssumme kürze Ausrechnen in dem Sie einfach all ihr
-              Inventar angeben. Falls Sie dann noch einen Account machen wird
-              dieser Wert automatisch im Schadensrechner eingesetzt.
+              Inventar angeben. So haben Sie auch immer einen Überblick über
+              Ihren Haushalt.
             </p>
             <button
               className="border-2 w-16 p-1 mx-auto mt-1 rounded-xl"
