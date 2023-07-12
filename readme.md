@@ -1,28 +1,30 @@
-# Versicherungsrechner
+# Insurance Calculator
 
-Dieses React Projekt ist ein Schadens- und Versicherungssummenrechner, welcher über Firebase ein Loggin möglich macht und im eingeloggten Zustand die ausgerechneten in eine Firestore Datenbank speichert.
+This React project is a damage and insurance amount calculator that allows users to log in via Firebase and, when logged in, saves the calculated values to a Firestore database.
 
-## Ziel
+## Goal
 
-Das Ziel dieses Projektes ist eine Vereinfachung der Schadens- und Versicherungssummenrechnung. Auch für einen Überblick über den eigenen Haushalt, kann dieser Rechner Abhilfe verschaffen.
+The goal of this project is to simplify the calculation of damage and insurance amounts. It can also provide an overview of one's household.
 
-## Dokumentation
-Hier findet sich die Ursprüngliche [Idee](./Documentation/Dokumentation.md#idee) dieses Projektes.
+## Documentation
+Here is the original [idea](./Documentation/Dokumentation.md#idee) of this project.
 
-Hier ist das [Problem Statement](./Documentation/Dokumentation.md#problem-statement).
+Here is the [problem statement](./Documentation/Dokumentation.md#problem-statement).
 
-Hier die [User Story](./Documentation/Dokumentation.md#user-story).
+Here is the [user story](./Documentation/Dokumentation.md#user-story).
 
-Das  [System Diagramm](./Documentation/Dokumentation.md#systemdiagramm).
+The [system diagram](./Documentation/Dokumentation.md#systemdiagramm).
 
-Und zum Schluss noch eine  [Reflexion](./Documentation/Dokumentation.md#reflexion).
+And finally, a [reflection](./Documentation/Dokumentation.md#reflexion).
 
-### Planung während des Projektes
+### Planning During the Project
 
-Während des Projektes habe ich ein [Planungsboard](./Documentation/Planungsboard.md) gebraucht.
+During the project, I used a [planning board](./Documentation/Planungsboard.md).
 
 ## Deployment
 
-Ich habe für das Deployment Netlify benutzt, da es die einfachste Variante ist React Apps zu veröffentlichen.
+For deployment, I used Netlify as it is the easiest way to publish React apps.
 
-Über diesen [Link](https://versicherungsrechner.netlify.app/) kommt man zu dem eigentlichen Versicherungsrechner.
+You can access the actual insurance calculator through this [link](https://versicherungsrechner.netlify.app/).
+
+Now this one
